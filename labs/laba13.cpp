@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
 #include <limits.h>
-#define nl; cout << endl;
+#define nl; cout << endl; // сокращение для переноса на следующую строку
 
 using namespace std;
 
-int **init(int& h, int& w) {
+int **init(int& h, int& w) { // функция создания матрицы и ее заполнения оценками от 2 до 5
     cout << "Введите количество учеников: "; cin >> h; nl;
     cout << "Введите количество предметов: "; cin >> w; nl;
     int **matrix = new int*[h];
@@ -15,12 +15,12 @@ int **init(int& h, int& w) {
     return matrix;
 }
 
-int *get_row(int **matrix, int i) {
+int *get_row(int **matrix, int i) { // чисто по заданию нужна функция возвращающая ряд
     return matrix[i];
 }
 
-int *get_col(int **matrix, int i) {
-    int size = sizeof(matrix) / sizeof(matrix[0]);
+int *get_col(int **matrix, int i) { // функция возвращающая столбец
+    int size = sizeof(matrix) / sizeof(matrix[0]); // рассчет размера массива (количество рядов)
     int *col = new int[size];
     for (int j = 0; j < size; ++j) col[j] = matrix[j][i];
     return col;
@@ -28,6 +28,7 @@ int *get_col(int **matrix, int i) {
 
 int main()
 {
+    // инициализация данных
     int h, w;
     int **matrix = init(h, w);
     string *students = new string[h], *objects = new string[w];
@@ -42,10 +43,11 @@ int main()
             for (int j = 0; j < w; ++j) cout << matrix[i][j] << "\t";
             nl;
         }
+        // действия
         int doing;
         cout << "Узнать количество успевающих учеников - 1\nУзнать средний балл студента - 2\nВыйти из программы - 0\nВыберите действие: "; cin >> doing; nl;
         if (doing == 0) {break;}
-        else if (doing == 1) {
+        else if (doing == 1) { 
             int n, sum;
             cout << "Выберите номер предмета: "; cin >> n; nl;
             int *col = get_col(matrix, n - 1);
