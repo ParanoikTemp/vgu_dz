@@ -3,12 +3,16 @@
 using namespace std;
 
 int main() {
-    char text[] = "ABCSCBIOS";
-    for (int i = 0; i < sizeof(text) / sizeof(text[0]) - 2; ++i) {
-        if (text[i] > text[i + 1]) {
+    char a, b;
+    cin >> a;
+    cin >> b;
+    while (b != '.') {
+        if (a > b) {
             cout << "The text is not written in alphabetical order";
             return 0;
         }
+        a = b;
+        cin >> b;
     }
     cout << "The text is written in alphabetical order";
     return 0;
