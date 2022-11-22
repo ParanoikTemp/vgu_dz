@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     int arr[] = {1, 3, 5, 3, 5, 3, 2, 5, 2, 9, 9, 3, 5, 4};
-    int k = 1, *new_arr = new int[5];
+    int k = 1, *new_arr = new int[1];
     bool flag;
     new_arr[0] = arr[0];
     for (int i : arr) {
