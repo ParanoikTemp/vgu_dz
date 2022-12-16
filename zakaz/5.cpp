@@ -24,6 +24,6 @@ int main()
     }
     function = pow(M_E, -1 * x);
     cout << "e^-x = " << function << endl;
-    cout << "Summa 1: " << summa1 << " |e^-x - summa 1| = " << function - summa1 << endl;
-    cout << "Summa 2 (" << count + 1 << " elements): " << summa2 << " |e^-x - summa 2| = " << function - summa2 << endl;
+    cout << "Summa 1: " << summa1 << " |e^-x - summa 1| = " << abs(function - summa1) << endl;
+    cout << "Summa 2 (" << count << " elements): " << summa2 << " |e^-x - summa 2| = " << abs(function - summa2) << endl;
 }
