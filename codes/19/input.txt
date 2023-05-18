@@ -1,0 +1,15 @@
+Adrenalinov Valery Mikhailovich|1|1|d|3|Algebra|3|MatAnalys|4|LinAlgebra|5|AnGem|5|History|
+Petrov Peter Valerievich|1|1|d|4|Algebra|3|MatAnalys|2|LinAlgebra|4|AnGem|3|History|
+Shelby Dmitry Egorovich|1|2|c|3|Algebra|3|MatAnalys|4|LinAlgebra|5|AnGem|4|History|
+Avoskin Egor Mikhailovich|2|1|d|4|Algebra|3|MatAnalys|5|LinAlgebra|5|AnGem|4|History|4|Algebra|3|MatAnalys|3|LinAlgebra|3|AnGem|3|History|
+Krug Vasily Egorovich|2|2|d|4|Algebra|4|MatAnalys|5|LinAlgebra|4|AnGem|4|History|4|Algebra|3|MatAnalys|3|LinAlgebra|4|AnGem|5|History|
+Petrov Gleb Valerievich|2|3|c|4|Algebra|4|MatAnalys|3|LinAlgebra|3|AnGem|4|History|5|Algebra|5|MatAnalys|2|LinAlgebra|5|AnGem|3|History|
+Gazmanov Vasily Egorovich|3|1|d|4|Algebra|3|MatAnalys|5|LinAlgebra|5|AnGem|5|History|4|Algebra|3|MatAnalys|5|LinAlgebra|3|AnGem|5|History|4|Algebra|3|MatAnalys|4|LinAlgebra|3|AnGem|5|History|
+Baronin Nikita Egorovich|3|3|c|5|Algebra|5|MatAnalys|5|LinAlgebra|3|AnGem|4|History|5|Algebra|4|MatAnalys|3|LinAlgebra|3|AnGem|4|History|3|Algebra|3|MatAnalys|4|LinAlgebra|5|AnGem|5|History|
+Yakovlev Nikita Nikitich|3|3|c|4|Algebra|5|MatAnalys|4|LinAlgebra|5|AnGem|5|History|3|Algebra|4|MatAnalys|4|LinAlgebra|4|AnGem|4|History|5|Algebra|3|MatAnalys|2|LinAlgebra|4|AnGem|5|History|
+Mikhalev Georgy Maksimovich|4|1|c|3|Algebra|4|MatAnalys|5|LinAlgebra|5|AnGem|3|History|4|Algebra|3|MatAnalys|5|LinAlgebra|4|AnGem|4|History|4|Algebra|4|MatAnalys|5|LinAlgebra|3|AnGem|4|History|4|Algebra|5|MatAnalys|3|LinAlgebra|4|AnGem|5|History|
+Ursalov Gleb Petrovich|4|2|d|3|Algebra|5|MatAnalys|5|LinAlgebra|3|AnGem|5|History|4|Algebra|3|MatAnalys|4|LinAlgebra|4|AnGem|5|History|5|Algebra|5|MatAnalys|3|LinAlgebra|5|AnGem|5|History|5|Algebra|5|MatAnalys|5|LinAlgebra|5|AnGem|4|History|
+Sidorov Vasily Petrovich|4|3|c|5|Algebra|5|MatAnalys|3|LinAlgebra|5|AnGem|5|History|4|Algebra|3|MatAnalys|5|LinAlgebra|3|AnGem|4|History|3|Algebra|4|MatAnalys|4|LinAlgebra|3|AnGem|5|History|5|Algebra|4|MatAnalys|3|LinAlgebra|4|AnGem|3|History|
+Efimov Dmitry Egorovich|5|1|c|4|Algebra|4|MatAnalys|3|LinAlgebra|4|AnGem|3|History|4|Algebra|3|MatAnalys|3|LinAlgebra|5|AnGem|3|History|4|Algebra|4|MatAnalys|5|LinAlgebra|3|AnGem|5|History|4|Algebra|3|MatAnalys|5|LinAlgebra|3|AnGem|5|History|5|Algebra|5|MatAnalys|3|LinAlgebra|2|AnGem|2|History|
+Pirogov Mikhail Vasilyevich|5|2|d|4|Algebra|3|MatAnalys|3|LinAlgebra|5|AnGem|5|History|4|Algebra|4|MatAnalys|3|LinAlgebra|5|AnGem|4|History|4|Algebra|5|MatAnalys|5|LinAlgebra|3|AnGem|5|History|5|Algebra|3|MatAnalys|5|LinAlgebra|5|AnGem|3|History|2|Algebra|4|MatAnalys|4|LinAlgebra|3|AnGem|3|History|
+Shukshin Egor Georgievich|5|2|d|5|Algebra|4|MatAnalys|3|LinAlgebra|5|AnGem|4|History|3|Algebra|3|MatAnalys|4|LinAlgebra|5|AnGem|4|History|4|Algebra|5|MatAnalys|3|LinAlgebra|3|AnGem|5|History|3|Algebra|3|MatAnalys|4|LinAlgebra|3|AnGem|4|History|4|Algebra|4|MatAnalys|4|LinAlgebra|4|AnGem|3|History|
