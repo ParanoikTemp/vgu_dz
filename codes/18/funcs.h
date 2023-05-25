@@ -19,5 +19,5 @@ struct Chel {
 
 Chel** setCheliki(ifstream& file, int& count);
 Chel* getChel(ifstream& file);
-void makeDatabase(const string& dbpath, Chel** cheliki, int len);
+void makeDatabase(const string& input, const string& dbpath);
 void Menu(const string input, const string output_file);

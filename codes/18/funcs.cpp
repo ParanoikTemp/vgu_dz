@@ -32,7 +32,10 @@ Chel* getChel(ifstream& file) {
     return chel;
 }
 
-void makeDatabase(const string& dbpath, Chel** cheliki, int len) {
+void makeDatabase(const string& input, const string& dbpath) {
+    int len = 0;
+    ifstream file(input);
+    Chel** cheliki = setCheliki(file, len);
     ofstream db(dbpath, ios::binary);
     for (int i = 0; i < len; ++i) db.write((char*)&(*cheliki[i]), sizeof (*cheliki[i]));
     db.close();
