@@ -1,0 +1,10 @@
+Max Johnson:Maple Street:25:7:456789
+Lily Adams:Elm Avenue:12:3:987654
+Ethan Martinez:Oak Drive:8:15:123456
+Ava Collins:Willow Lane:17:2B:789012
+Lucas Turner:Pine Road:33:11:345678
+Sophia Cooper:Cedar Court:5:9:567890
+Noah Reed:Birch Avenue:14:6C:901234
+Mia Hayes:Rosemary Terrace:21:4:234567
+Benjamin Foster:Sycamore Way:10:12:678901
+Emma Price:Magnolia Lane:3:8A:890123
