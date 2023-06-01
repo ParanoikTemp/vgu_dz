@@ -1,20 +1,5 @@
 #include "funcs.h"
 
-Chel** setCheliki(ifstream& file, int& count) {
-    count = 0;
-    string line;
-    while (getline(file, line)) {
-        count += 1;
-    }
-    file.clear();
-    file.seekg(0);
-    Chel** cheliki = new Chel * [count];
-    for (int i = 0; i < count; ++i) {
-        cheliki[i] = getChel(file);
-    }
-    return cheliki;
-}
-
 Chel* getChel(ifstream& file) {
     Address adr{"Dont know", "000", "0"};
     Chel* chel = new Chel{"Noname", adr, "00000"};
@@ -33,12 +18,15 @@ Chel* getChel(ifstream& file) {
 }
 
 void makeDatabase(const string& input, const string& dbpath) {
-    int len = 0;
     ifstream file(input);
-    Chel** cheliki = setCheliki(file, len);
-    ofstream db(dbpath, ios::binary);
-    for (int i = 0; i < len; ++i) db.write((char*)&(*cheliki[i]), sizeof (*cheliki[i]));
+    fstream db(dbpath, ios::binary);
+    Chel* chel;
+    while (!file.eof()) {
+        chel = getChel(file);
+        db.write((char*)&(*chel), sizeof (Chel));
+    }
     db.close();
+    file.close();
 }
 
 void Menu(const string input, const string output_file) {
