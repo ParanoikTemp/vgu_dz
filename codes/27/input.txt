@@ -1,0 +1,15 @@
+J.K. Rowling|Harry Potter and the Philosopher's Stone|1997|Fantasy
+George Orwell|1984|1949|Dystopian Fiction
+Jane Austen|Pride and Prejudice|1813|Romance
+F. Scott Fitzgerald|The Great Gatsby|1925|Classic Literature
+Harper Lee|To Kill a Mockingbird|1960|Coming-of-Age Fiction
+J.R.R. Tolkien|The Lord of the Rings|1954|Fantasy
+Ernest Hemingway|The Old Man and the Sea|1952|Fiction
+Emily Bronte|Wuthering Heights|1847|Gothic Fiction
+Mark Twain|The Adventures of Huckleberry Finn|1884|Adventure
+Gabriel Garcia Marquez|One Hundred Years of Solitude|1967|Magical Realism
+Charles Dickens|A Tale of Two Cities|1859|Historical Fiction
+Virginia Woolf|Mrs. Dalloway|1925|Modernist Literature
+Aldous Huxley|Brave New World|1932|Science Fiction
+Leo Tolstoy|War and Peace|1869|Historical Fiction
+William Shakespeare|Romeo and Juliet|1597|Tragedy
