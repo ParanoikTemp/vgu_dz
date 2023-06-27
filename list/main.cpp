@@ -56,6 +56,7 @@ int main() {
     head = reverseNode(head);
     cout << "Реверснул хуйню. \nНовый список: ";
     printList(head); cout << " | Длина: " << getListLength(head) << endl;
+    
     cout << endl << endl << "Ну и вот экспериментальный тест:\n";
     Node *list = nullptr;
     for (int i = 0; i < 8; ++i) {
