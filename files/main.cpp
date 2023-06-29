@@ -98,11 +98,11 @@ int main() {
     // Структуры вам врядли придется записывать на экзамене, если че сами найдите как их записывать.
     // в принципе запись и чтение почти идентичны как и с обычными файлами. Просто упор делается именно на байты и их четкое количество.
 
-    ofstream bin_file(bin_filename);
+    ofstream bin_file(bin_filename, ios::binary);
 
     bin_file << "Hello";
 
-    ifstream bin_file2(bin_filename);
+    ifstream bin_file2(bin_filename, ios::binary);
     char chars3[6];
     bin_file2.read(chars3, 6);
 
