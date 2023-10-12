@@ -1,4 +1,4 @@
-#include "struct.h"
+#include "stack.h"
 
 Stack::~Stack() {clear();};
 
