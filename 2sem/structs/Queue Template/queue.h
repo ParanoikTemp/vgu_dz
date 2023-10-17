@@ -10,7 +10,7 @@ class Queue {
 private:
     QueueNode<Type>* head = nullptr;
     QueueNode<Type>* tail = nullptr;
-    Type length = 0;
+    int length = 0;
 public:
     ~Queue();
     int getLength() const;
