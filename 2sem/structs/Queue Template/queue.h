@@ -1,3 +1,6 @@
+#include <ostream>
+using namespace std;
+
 template <typename Type>
 struct QueueNode {
     Type value;
@@ -45,7 +48,7 @@ void Queue<Type>::enqueue(const Type value) {
 template <typename Type>
 Type Queue<Type>::dequeue() {
     length -= 1;
-    int value = tail->value;
+    Type value = tail->value;
     QueueNode<Type>* rem = tail;
     if (length == 0)
         head = tail = nullptr;
@@ -81,3 +84,16 @@ int Queue<Type>::count(const Type value) const {
         if (node->value == value) ++cnt;
     return cnt;
 }
+
+class Enot {
+private:
+    string name;
+    int age;
+    float weight;
+public:
+    friend ostream& operator<<(ostream& stream, const Enot& other) {
+        stream << "Имя: " << other.name << ", Возраст: " << other.age << ", Вес: " << other.weight << "кг. \n";
+        return stream;
+    }
+    Enot(string ename, int eage, float eweight) : name(ename), age(eage), weight((float) eweight) {}
+};
