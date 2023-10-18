@@ -18,3 +18,5 @@ void Tree::add(const string word, TreeNode* node = nullptr)
 		return;
 	}
 }
+
+// Лаба в разработке
