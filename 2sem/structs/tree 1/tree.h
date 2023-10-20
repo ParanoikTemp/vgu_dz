@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 using std::string;
 
 struct TreeNode
@@ -17,5 +16,5 @@ private:
 	TreeNode* head = nullptr;
 public:
 	void add(const string word, TreeNode* node = nullptr);
+	void printCount(TreeNode* node = nullptr);
 };
-
