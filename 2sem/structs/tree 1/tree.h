@@ -17,4 +17,5 @@ private:
 public:
 	void add(const string word, TreeNode* node = nullptr);
 	void printCount(TreeNode* node = nullptr);
+	void printTree(TreeNode* node = nullptr, int level = 0, int side = 0);
 };
