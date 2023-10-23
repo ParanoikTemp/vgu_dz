@@ -29,4 +29,14 @@ void Tree::printCount(TreeNode* node) {
     if (node->left != nullptr) printCount(node->left);
 }
 
+void Tree::printTree(TreeNode* node, int level, int side) {
+    if (node == nullptr) node = head;
+    if (node->right != nullptr) printTree(node->right, level + 1, 1);
+    for (int i = 0; i < level; ++i) std::cout << "     ";
+    if (side > 0) std::cout << '/';
+    else if (side < 0) std::cout << '\\';
+    std::cout << node->word << " [" << level << "]" << std::endl;
+    if (node->left != nullptr) printTree(node->left, level + 1, -1);
+}
+
 // Лаба в разработке
