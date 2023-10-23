@@ -1,14 +1,21 @@
 #include<iostream>
 #include<string>
 #include"tree.h"
+#include<fstream>
 
 using namespace std;
 
 int main()
 {
-    string words[] = {"mama", "papa", "baba", "mama", "papa", "baba", "deda", "gena", "baba", "gena", "rima", "baba"}; // 12
-    Tree tr;
-    for (int i = 0; i < 12; ++i) tr.add(words[i]);
-    tr.printCount();
+    Tree tree;
+    ifstream file("words.txt");
+    if (file.is_open()) {
+        string word;
+        for (int i = 0; i < 250; ++i) {
+            file >> word;
+            tree.add(word);
+        }
+    }
+    tree.printTree();
     return 0;
 }
