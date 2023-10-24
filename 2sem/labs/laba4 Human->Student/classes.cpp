@@ -23,7 +23,14 @@ void Man::setWeight(float weight) {
     *(this->weight) = weight;
 }
 
-Student::Student(string name, int age, bool sex, float weight, unsigned int year): Man(name, age, sex, weight) {
+Man::~Man() {
+    delete name;
+    delete age;
+    delete sex;
+    delete weight;
+};
+
+Student::Student(string name, int age, bool sex, float weight, unsigned int year) : Man(name, age, sex, weight) {
     yearOfStudy = new unsigned int(year);
 }
 
@@ -38,4 +45,8 @@ Student& Student::operator++() {
 
 void Student::print() {
     cout << *name << ' ' << *age << ' ' << *sex << ' ' << *weight << ' ' << *yearOfStudy << endl;
+}
+
+Student::~Student() {
+    delete yearOfStudy;
 }
