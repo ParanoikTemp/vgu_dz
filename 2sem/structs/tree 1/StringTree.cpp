@@ -21,7 +21,7 @@ void StringTree::insert(const string& word, int count, STNode *node) {  // До�
             if (word.size() > length) length = word.size() / 2 + 1;
         }
     } else {  // Наше слово совпадает с тем, что в узле
-        node->count += 1;
+        node->count += count;
     }
 }
 
