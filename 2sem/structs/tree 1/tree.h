@@ -1,25 +1,32 @@
 #include <iostream>
+#include <string>
+#include <vector>
 
-using std::string;
+using std::string, std::cout, std::endl, std::vector;
 
-struct TreeNode
-{
+
+// Справа те элементы, что больше. Слева - меньше.
+struct STNode {
     string word;
     int count = 1;
-    TreeNode* left = nullptr;
-    TreeNode* right = nullptr;
-    ~TreeNode();
+    STNode *right = nullptr;
+    STNode *left = nullptr;
+    ~STNode() {
+        right = nullptr;
+        left = nullptr;
+        delete right;
+        delete left;
+    }
+
 };
 
-class Tree
-{
+class StringTree {
 private:
-    TreeNode* head = nullptr;
-    void remove(TreeNode* node, TreeNode* rmnode);
+    STNode *head = nullptr;
+    int length = 0;
+    void hardRemove(STNode *node, STNode *prev, STNode *rmnode);
 public:
-    void add(const string word, int count = 1, TreeNode* node = nullptr);
-    void printCount(TreeNode* node = nullptr);
-    void printTree(TreeNode* node = nullptr, int level = 0, int side = 0);
-    int removeElement(const string word, TreeNode* node = nullptr, int level = 0);
-    void setCount(const string word, const int count);
+    void insert(const string& word, int count = 1, STNode *node = nullptr);
+    int remove(const string& word, STNode *node = nullptr, STNode *prev = nullptr, int side = 0, bool isHead = true);
+    void printTree(STNode *node = nullptr, int level = 0, int side = 0, vector<int> nums = vector<int>());
 };
