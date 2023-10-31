@@ -29,4 +29,5 @@ public:
     void insert(const string& word, int count = 1, STNode *node = nullptr);
     int remove(const string& word, STNode *node = nullptr, STNode *prev = nullptr, int side = 0, bool isHead = true);
     void printTree(STNode *node = nullptr, int level = 0, int side = 0, vector<int> nums = vector<int>());
+    void printCount(STNode *node = nullptr, bool isHead = true);
 };
