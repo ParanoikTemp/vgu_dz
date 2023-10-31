@@ -71,7 +71,13 @@ bool in(vector<int> &nums, int number) {
     return false;
 }
 
-void StringTree::printTree(STNode *node, int level, int side, vector<int> nums) {  // Это говно я кодил 4-5 часов....
+void kek(vector<int> &nums) {
+    cout << " [";
+    for (int num : nums) cout << num << ", ";
+    cout << "] ";
+}
+
+void StringTree::printTree(STNode *node, int level, int side, vector<int> nums) {
      if (node == nullptr) {  // Если не задано, то задаем на корень
          if (head == nullptr) return;
          node = head;
@@ -107,4 +113,10 @@ void StringTree::printTree(STNode *node, int level, int side, vector<int> nums) 
      }
 }
 
-
+void StringTree::printCount(STNode *node, bool isHead) {
+    if (isHead) node = head;
+    if (node == nullptr) return;
+    printCount(node->left, false);
+    cout << node->word << ": " << node->count << endl;
+    printCount(node->right, false);
+}
