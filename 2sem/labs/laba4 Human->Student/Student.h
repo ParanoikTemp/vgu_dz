@@ -21,7 +21,7 @@ public:
     /**
      * Деструктор класса Student
      */
-    ~Student() override;
+    virtual ~Student();
     /**
      * Сеттер года обучения студента
      * @param year - год обучения студента
