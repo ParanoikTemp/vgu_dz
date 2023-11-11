@@ -1,4 +1,4 @@
-#include "student.h"
+#include "Student.h"
 
 Student::Student(string name, int age, bool sex, float weight, unsigned int year): Man(name, age, sex, weight) {
     yearOfStudy = new unsigned int(year);
