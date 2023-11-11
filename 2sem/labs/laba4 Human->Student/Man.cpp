@@ -1,4 +1,4 @@
-#include "man.h"
+#include "Man.h"
 
 Man::Man(string name, int age, bool sex, float weight) {
     this->name = new string(name);
