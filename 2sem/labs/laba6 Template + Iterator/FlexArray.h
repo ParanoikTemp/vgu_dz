@@ -163,12 +163,12 @@ public:
 	 * Создает итератор с указателем на начало массива
 	 * @return Итератор на начале массива
 	 */
-	inline Iterator begin() { return arr; }
+	inline Iterator begin() { return Iterator(arr); }
 	/**
 	 * Создает итератор с указателем на конец массива
 	 * @return Итератор на конце массива
 	 */
-	inline Iterator end() { return arr + len; }
+	inline Iterator end() { return Iterator(arr + len); }
 
 	class Iterator {
 	private:
