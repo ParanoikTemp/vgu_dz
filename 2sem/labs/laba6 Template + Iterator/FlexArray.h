@@ -192,30 +192,6 @@ public:
 		 * @return ссылку на себя
 		 */
 		Iterator& operator=(const Iterator &other) = default;
-
-		/**
-		 * Оператор сложения
-		 * @param n на сколько сдвинуть итератор
-		 * @return Итератор через n элементов
-		 */
-		Iterator operator+(int n) const {
-			T *cur2 = cur;
-			for (int i = 0; i < n; ++i) ++cur2;
-			return Iterator(cur2);
-		}
-		/**
-		 * Оператор вычитания
-		 * @param n на сколько назад сдвинуть итератор
-		 * @return Итератор на n элементов назад
-		 */
-		Iterator operator-(int n) const {
-			T *cur2 = cur;
-			for (int i = 0; i < n; ++i) --cur2;
-			return Iterator(cur2);
-		}
-
-		int operator-(const Iterator &other) const { return distance(cur, other.cur); }
-
 		/**
 		 * Оператор постинкремента. После операции итератор движется вперед на 1 шаг.
 		 * @return Свою копию
