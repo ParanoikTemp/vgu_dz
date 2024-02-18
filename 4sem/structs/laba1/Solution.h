@@ -15,6 +15,10 @@ private:
     int countNumbersWithUniqueDigits(int n, long long int number) {
         if (n == 0)
             return 0;
+        if (n < 0) {
+            std::cerr << ">:0 ERROR!!!!! (n < 0)\n";
+            return -1;
+        }
         int sum = 0;
         for (int i = 0; i < 10; ++i) {
             if (!digitInNumber(i, number))
@@ -27,3 +31,9 @@ public:
         return 1 + countNumbersWithUniqueDigits(n, 0);
     }
 };
+
+/*
+Посчитать количество уникальных чисел от 0 включительно до 10^n не включительно.
+Уникальным числом называют число, в котором ни одна цифра не повторяется.
+34 - уникальное, 565 - не уникальное
+*/
